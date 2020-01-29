@@ -1,0 +1,26 @@
+body{width:1536px;
+height: 673px;
+margin: 0 auto;
+border: 1px solid;}
+
+header{}
+header h1{}
+header h1 a{}
+header h1 a img{}
+
+.lnb{overflow: hidden;}
+.lnb ul{float: right;}
+.lnb ul li{display: inline-block;
+float: left;}
+.lnb ul li:last-child{
+    content:none;
+}
+
+.lnb ul li a{}
+
+.lnb ul li a::after{
+    content: "|";
+    top:0; right:10px;
+    margin:10px;
+}
+
