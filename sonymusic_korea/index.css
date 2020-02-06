@@ -42,6 +42,8 @@ table {
 	border-spacing: 0;
 }
 
+a{color: black;
+text-decoration: none;}
 /* ------------------------------------ */
 
 
@@ -57,6 +59,7 @@ table {
 
 header{
 	width:100%;
+	background: gray;
 }
 
 .menu{display: flex;
@@ -64,33 +67,51 @@ header{
 	justify-content: space-between;
 align-items: center;
 margin: 0 auto;
-padding:5px 0;}
-
+}
+section{
+}
 section ul{
 	width: 940px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	text-align: center;
+	text-align: left;
 }
 section ul figure {
 	border: 1px solid black;
 	margin-top:  20px;
 }
-section article figure{
-	
-}
 
-section article figure img{
+section ul figure img{
 	width:220px;
-	height: 220px;
+	height:220px;
+}
+section ul li figure p{margin: 8px 0;}
+
+section ul li figure:nth-of-type(3){
+	font-size: 10px;	
+}
+/* figure 3번째 자식 p만 선택하는 방법을 모르겠다. */
+
+
+section .nextpage{
+	width:940px;
+	margin: 20px auto;
+	padding:10px;
+	text-align: right;
 }
 
+section .nextpage a{
+	margin-right: 15px;
+}
 
 footer{ background: gray;
-padding:20px;}
+padding:20px;
+border-top: 3px solid #ccc;}
 
 footer p{
 	text-align: center;
+	font-size: 12px;
+	line-height: 1.5em;
 }
