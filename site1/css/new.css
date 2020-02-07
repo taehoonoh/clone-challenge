@@ -44,7 +44,15 @@ table {
 
 a{color: black;}
 
-/* -------------------------------- */
+
+/*--------------------------------------*/
+
+
+header{}
+header .back{
+    width:500px; height: 500px;
+    background:url(/img/slide04.jpg) no-repeat;
+background-size: cover;}
 
 
 
@@ -53,74 +61,17 @@ a{color: black;}
 
 
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
-    background: black;
-    width: 100%;
-    position: fixed;
-top:20px; left:20px;
-}
-header h1{color: white;
-
-}
-
-header a{color: white;
-}
 
 
-.content1{
-	height:833px;
-	background: white;
-
-}
-.content1{
-	width:1411px;
-	margin:90px auto;
-}
-.content1 ul li{
-	float: left;
-	margin-left: 35px;
-}
-.content1 .position{
-
-}
-.content1 .position {
-	color: white;
-	position: absolute;
-	top:30%; left:40%;
-	text-align: center;
-}
-
-.content1 .position p{
-	font-size: ;
-}
-.content1 .position p:after{
-	content: "";
-	display: block;
-	width:300px;
-	height: 2px;
-	background: white;
-	margin:20px 0 30px 0;
-}
-.content1 .position strong{
-	font-size: 50px;
-}
-.content1 .position{
-}
 
 
-article{
-	height: 246px;
-	background: green;
-}
-.content3
-{height: 964px;
-background: white;}
 
-footer{
-	background-color: gray;;
-	height:220px;
-}
+
+
+
+
+
+
+
+
+
