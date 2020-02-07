@@ -74,32 +74,36 @@ section ul{
 	width: 940px;
 	margin: 0 auto;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	text-align: left;
+    
 }
 section ul figure {
-	border: 1px solid black;
 	margin-top:  20px;
+    border: 1px solid black;
+    
 }
 
 section ul figure img{
 	width:220px;
 	height:220px;
+    border: 1px solid #ccc;
 }
 section ul li figure p{margin: 8px 0;}
 
-section ul li figure:nth-of-type(3){
-	font-size: 10px;	
+section ul li figure>p:nth-of-type(2){
+	font-size: 12px;	
 }
-/* figure 3번째 자식 p만 선택하는 방법을 모르겠다. */
+/* figure 3번째 자식 p만 선택하는 방법을 모르겠다.-해결 */
 
 
 section .nextpage{
 	width:940px;
 	margin: 20px auto;
-	padding:10px;
+	padding:10px 0;
 	text-align: right;
+    background: yellow;
 }
 
 section .nextpage a{
@@ -107,7 +111,7 @@ section .nextpage a{
 }
 
 footer{ background: gray;
-padding:20px;
+padding:20px 0;
 border-top: 3px solid #ccc;}
 
 footer p{
