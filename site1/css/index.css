@@ -53,26 +53,46 @@ a{color: black;}
 
 
 
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid black;
     background: black;
+    opacity:0.5;
     width: 100%;
     position: fixed;
-top:20px; left:20px;
+    top:0; left:0;
+    padding: 25px 0;
+    
 }
 header h1{color: white;
+    padding-left: 20px;
 
 }
 
 header a{color: white;
+    padding-right: 30px;
+}
+
+.visual img{
+    width:100%;
+    
+}
+
+.visual p{color: white;
+font-size: 50px;
+}
+.visual strong{color: white;
+font-size: 60px;
 }
 
 
+
+
+
 .content1{
-	height:833px;
 	background: white;
 
 }
@@ -80,47 +100,13 @@ header a{color: white;
 	width:1411px;
 	margin:90px auto;
 }
+
+.content1 ul{
+    display: flex;
+    justify-content: space-around;
+}
 .content1 ul li{
-	float: left;
-	margin-left: 35px;
-}
-.content1 .position{
-
-}
-.content1 .position {
-	color: white;
-	position: absolute;
-	top:30%; left:40%;
-	text-align: center;
 }
 
-.content1 .position p{
-	font-size: ;
-}
-.content1 .position p:after{
-	content: "";
-	display: block;
-	width:300px;
-	height: 2px;
-	background: white;
-	margin:20px 0 30px 0;
-}
-.content1 .position strong{
-	font-size: 50px;
-}
-.content1 .position{
-}
-
-
-article{
-	height: 246px;
-	background: green;
-}
-.content3
-{height: 964px;
-background: white;}
-
-footer{
-	background-color: gray;;
-	height:220px;
-}
+.content1 ul li figure{
+    background: gray;
