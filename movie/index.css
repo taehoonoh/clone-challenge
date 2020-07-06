@@ -51,7 +51,10 @@ color:white}
 
 
 
-
+h4{
+	font-size: 30px;
+	color: white;
+}
 
 
 .total{
@@ -87,7 +90,9 @@ padding-left: 10px;}
 content .box{margin:10px;
 
 }
-content .box img{float: left;}
+content .box img{float: left;
+width:140px;
+height:201px}
 
 content .clearfix{overflow: hidden;}
 
@@ -96,6 +101,7 @@ color: white;
 padding-left: 10px;
 }
 
+content em{color: white;}
 content .date{margin: 10px;}
 content .number{width:50px;
 color: white;
