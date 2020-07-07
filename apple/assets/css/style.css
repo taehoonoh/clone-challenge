@@ -175,7 +175,7 @@ display: -webkit-box;
     .playbg p{margin-left: 20px;}
 
     .playbg .bt{
-        margin-left: calc(60% - 20px);
+        margin-left: calc(60% - 60px);
     }
 
 /* nav */
