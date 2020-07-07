@@ -10,6 +10,7 @@
  
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
 
     
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
@@ -18,6 +19,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" />
 
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e8bf3ba7f5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,12 +30,95 @@
         <div class="container">
             <div class="row">
                 <div class="header">
-                    <h1><a href="#"></a></h1>
-                    <nav class="nav"></nav>
+                    <h1>
+                        <a href="#">
+                        <em><img src="assets/img/logo.png" alt="MEGABOX"></em>
+                        <strong><img src="assets/img/logo-sub.png" alt="LIFE THEATER"></strong>
+                    </a>
+                </h1>
+                <nav id="mNav">
+                    <h2 class="ir_so">메가박스 전체메뉴</h2>
+                    <a href="#" class="ham"><span></span></a>
+                </nav>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">영화</a></li>
+                            <li><a href="#">큐레이션</a></li>
+                            <li><a href="#">영화관</a></li>
+                            <li><a href="#">특별관</a></li>
+                            <li><a href="#">스토어</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">로그인</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
+    <!-- //header -->
+
+    <section id="banner">
+        <h2 class="ir_so">최신 영화 소식</h2>
+        <div class="banner_menu">
+            <div class="container">
+                <div class="row">
+                    <div class="bm_left">
+                        <ul>
+                            <li class="total"><a href="#"><i class="fas fa-bars"></i> 전체메뉴</a></li>
+                            <li class="line"><a href="#">필름 소사이어티</a></li>
+                            <li><a href="#">클래식 소사이어티</a></li>
+                        </ul>
+                    </div>
+                    <div class="bm_right">
+                        <ul>
+                            <li class="line"><a href="#">고객센터</a></li>
+                            <li class="line"><a href="#">멤버십</a></li>
+                            <li><a href="#">VIP</a></li>
+                        </ul>
+                        <ul>
+                            <li class="white"><a href="#">상영 시간표</a></li>
+                            <li class="puple"><a href="#">빠른예매</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ss1">
+                        <div class="container">
+                            <div class="row">
+                                <h2>캡틴 마블<em>Captain Marvel</em></h2>
+                                <p>새로운 히어로, 어벤져스의 희망</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ss2">
+                        <div class="container">
+                            <div class="row">
+                                <h2>어벤져스<em>Avengers</em></h2>
+                                <p>역대 최단 기간 1000만 관객 돌파 기록</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ss3">
+                        <div class="container">
+                            <div class="row">
+                                <h2>왕좌의 게임<em>Game of Thrones</em></h2>
+                                <p>철 왕좌를 차지하기 위한 싸움</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner -->
 
 
 
@@ -43,33 +130,25 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- 자바스크립트 라이브러리 -->
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/modernizr-custom.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+  autoplay: {
+    delay: 5000,
+  },
+});
+    </script>
 </body>
 
 </html>
