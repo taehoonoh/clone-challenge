@@ -23,6 +23,8 @@ position: absolute; left: 0; bottom: -7px;}
 
 .ham span::after{content: ""; width: 25px; height: 4px; background: #39106a;
 position: absolute; left: 0; top: -7px;}
+
+
 /* 헤더 영역 */
 .header{display: flex;
 justify-content: space-between;}
@@ -154,7 +156,7 @@ background: rgba(255,255,255,0.7); position: absolute; left:0; bottom: -20px;}
 }
 
 @media (max-width:600px){
-    .slider{height:400px}
+    .slider{height: 400px;}
     .slider .swiper-slide h2{margin-top: 120px; font-size: 24px; line-height: 35px;}
     .slider .swiper-slide h2::after{bottom:-5px}
     .slider .swiper-slide h2 em{font-size: 20px;}
