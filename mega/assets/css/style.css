@@ -101,6 +101,34 @@ background: rgba(255,255,255,0.7); position: absolute; left:0; bottom: -20px;}
 .slider .swiper-slide p{color: #fff; font-size: 27px; padding-top:55px;}
 
 
+/* 무비 */
+.movie{}
+.movie_title{}
+.movie_title ul{}
+.movie_title ul li{}
+.movie_chart{}
+.movie_chart > div{}
+.movie_chart > div > div{display: inline-block;
+width: 292px; height: 592px; border: 1px solid #c4c4c4;}
+.movie_chart > div > div .poster{}
+.movie_chart > div > div .poster .rank{}
+.movie_chart > div > div .poster .mx{}
+.movie_chart > div > div .infor{}
+.movie_chart > div > div .infor h3{}
+.movie_chart > div > div .infor h3 span{}
+.movie_chart > div > div .infor h3 strong{}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 미디어쿼리 */
 @media (max-width:1290px){
