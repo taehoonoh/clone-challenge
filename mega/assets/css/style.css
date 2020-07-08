@@ -3,7 +3,8 @@
 /* 레이아웃 */
 
 #mNav{display:none ;position: absolute; top:8px; right: 14px;}
-#header {width: 100%;border-bottom: 1px solid #c6c6c6;}
+#header {width: 100%;border-bottom: 1px solid #c6c6c6;
+background: #fff;}
 #banner{position: relative;}
 
 /* 가운데 영역 */
@@ -102,24 +103,60 @@ background: rgba(255,255,255,0.7); position: absolute; left:0; bottom: -20px;}
 
 
 /* 무비 */
-.movie{}
-.movie_title{}
-.movie_title ul{}
-.movie_title ul li{}
-.movie_chart{}
-.movie_chart > div{}
-.movie_chart > div > div{display: inline-block;
-width: 292px; height: 592px; border: 1px solid #c4c4c4;}
-.movie_chart > div > div .poster{}
-.movie_chart > div > div .poster .rank{}
-.movie_chart > div > div .poster .mx{}
-.movie_chart > div > div .infor{}
-.movie_chart > div > div .infor h3{}
-.movie_chart > div > div .infor h3 span{}
-.movie_chart > div > div .infor h3 strong{}
+.movie{padding:100px 0;}
+.movie_title{margin-bottom: 60px;}
+.movie_title ul{width: 848px; display: flex; margin: 0 auto;}
+.movie_title ul li{width: 210px; text-align: center;
+border: 1px solid #c4c4c4;
+margin-left: -1px;}
+.movie_title ul li a{display: block; padding: 15px 0;
+font-size: 18px; color:#666; font-weight: 700;}
+.movie_title ul li.active a{background: #666; color: #fff;}
+.movie_chart{ overflow: hidden;}
+.movie_chart > div > div{display: flex;}
+.movie_chart > div > div > div{width: 292px; 
+    margin-right: 18px; 
+  }
+.movie_chart > div > div > div:last-child{margin-right: 0;}
+.movie_chart > div > div > div .poster{position: relative;}
+.movie_chart > div > div > div .poster img{display: block;}
+.movie_chart > div > div > div .poster .rank{position: absolute;
+top:17px; left:0; width: 50px;height: 50px; line-height: 50px;
+background-color: #38116a; text-align: center;
+box-shadow: 3px 3px 8px rgba(0,0,0,0.5);}
+.movie_chart > div > div > div .poster .rank strong{
+    font-size: 22px;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
+    color: #fff;
+}
+.movie_chart > div > div > div .poster .mx{position: absolute;
+top:17px; right: 17px;display: block;}
+.movie_chart > div > div > div .poster .mx span{width: 103px; height: 25px; display: block;}
+.movie_chart > div > div > div .poster .mx .m{background-position: 0 -75px;}
+.movie_chart > div > div > div .poster .mx .b{background-position: 0 -100px;}
 
+.movie_chart > div > div > div .infor{background: #fff; padding: 17px;
+border: 1px solid #d9d9d9;}
+.movie_chart > div > div > div .infor h3{color: #333; font-size: 28px;
+font-weight: 700; margin-bottom: 20px;}
 
+.movie_chart > div > div > div .infor h3 strong{margin-left: 8px}
+.movie_chart > div > div > div .infor h3 span{width: 29px; height: 29px; 
+display: inline-block;margin-top: 9px;
+vertical-align: -3px;}
+.movie_chart > div > div > div .infor h3 span.all{background-position: -87px -125px;}
+.movie_chart > div > div > div .infor h3 span.a12{background-position: 0px -125px;}
+.movie_chart > div > div > div .infor h3 span.a15{background-position: -29px -125px;}
+.movie_chart > div > div > div .infor h3 span.a19{background-position: -58px -125px;}
+.movie_chart > div > div > div .infor .infor_btn{
+    display: flex;
+}
+.movie_chart > div > div > div .infor .infor_btn a{
+    background: #f2f2f2;width: 49%;
+    text-align: center;
+    padding:15px 0;box-sizing: border-box; margin-right: 2%;font-size:18px}
 
+.movie_chart > div > div > div .infor .infor_btn a:last-child{margin-right: 0;}
 
 
 
@@ -167,19 +204,35 @@ width: 292px; height: 592px; border: 1px solid #c4c4c4;}
     .slider .swiper-slide h2 em{font-size: 34px;}
     .slider .swiper-slide p{font-size: 16px; padding-top: 30px;}
     .banner_menu .bm_right ul {top: 315px; left: 41px;}
-        .banner_menu a{font-size: 14px;
+    .banner_menu a{font-size: 14px;
         padding: 3px 5px 5px 5px;}
-        .slider .swiper-slide h2::after{ left:20px; bottom:-15px}
-    
+    .slider .swiper-slide h2::after{ left:20px; bottom:-15px}
+    .movie_title ul{width: auto; margin: 0 auto;}
+    .movie_title ul li{width: 25%; box-sizing: border-box;}
 }
 
 
 @media (max-width:768px){
+    body {background: #d9d7e0;}
+    
     #mNav{right:6px;}
     .row{padding: 0 16px;}
     .header h1 strong{display: none;}
     .header h1{text-align: left;}
     .banner_menu .bm_right ul {left: 33px;}
+    #movie .row {background: #fff; margin: 24px;padding: 24px;}
+    #movie .ir_so{position: static; width: auto; height:  auto; line-height: normal;text-indent: 0; font-size: 24px; font-weight: bold; padding-bottom: 20px;}
+    .movie {padding: 0}
+    .movie_title{margin-bottom: 30px;}
+    .movie_title ul{position: relative; padding-bottom: 10px;}
+    .movie_title ul:before{content: '';position: absolute;z-index: 1;left: 0;
+    bottom: 0; width: 100%; height: 2px; background: #e1e1e1;}
+    .movie_title ul li {width: auto;border: 0;}
+    .movie_title ul li a {color: #666;font-weight: 400;font-size: 18px;
+    padding: 0; margin-right: 35px; position: relative;}
+    .movie_title ul li.active a::before{content: '';content: '';position: absolute;z-index: 2;left: 0;
+        bottom: -10px; width: 100%; height: 2px; background: #666;}
+    .movie_title ul li.active a { background:none; color: #666;}
     
 }
 
@@ -188,6 +241,7 @@ width: 292px; height: 592px; border: 1px solid #c4c4c4;}
     .slider .swiper-slide h2{margin-top: 120px; font-size: 24px; line-height: 35px;}
     .slider .swiper-slide h2::after{bottom:-5px}
     .slider .swiper-slide h2 em{font-size: 20px;}
+
     .slider .swiper-slide p{font-size: 16px; padding-top: 25px;}
     .banner_menu .bm_right ul {top: 240px;}
     .banner_menu .bm_right li.white a{color: white;background: rgba(0,0,0,0.1);
@@ -196,6 +250,30 @@ width: 292px; height: 592px; border: 1px solid #c4c4c4;}
     padding: 3px 5px 5px 5px;}
     .swiper-pagination-bullet{width: 13px !important;
     height: 13px !important;}
+
+    #movie .container{}
+    #movie .container::after{ content: ''; position: absolute; z-index: 20;
+    top:0; right: 0; width: 8px; height: 100%; background:#d9d7e0;}
+    #movie .row{position: relative; margin: 8px; padding:16px; margin-right: 0; padding-right: 0;}
+    #movie .row::after{content: ''; position: absolute; top: 0; right: 0; z-index: 0;
+    width: 24px; height: 100%; background: #fff;}
+    #movie .ir_so{font-size: 18px; padding-bottom: 10px;}
+    .movie_title{margin-bottom: 20px;}
+    .movie_title ul{padding-bottom: 8px;}
+    .movie_title ul li a{font-size: 14px; margin-right: 15px;}
+    .movie_title ul li.active a:before{bottom: -8px;}
+    .movie_chart{position: relative; z-index: 30;}
+    .movie_chart > div > div >div .infor{padding:5px;}
+    .movie_chart > div > div >div .infor h3{text-align: center; margin: 5px 0 10px;}
+    .movie_chart > div > div >div .infor h3 strong{display: block; font-size: 19px;
+    color: #222; font-weight: 300;}
+    .movie_chart > div > div >div .infor h3 span{display: none;}
+    .movie_chart > div > div >div .infor .infor_btn a{width: 52%;
+    margin-left: 24%; display: block; margin-right: 0; padding:5px;
+color: #777; margin-bottom: 5px; box-sizing: border-box;
+font-size: 14px; background: none; border: 1px solid #ddd;}
+
+    .movie_chart > div > div >div .infor .infor_btn a:last-child{display: none;}
 }
 
 
@@ -204,5 +282,8 @@ width: 292px; height: 592px; border: 1px solid #c4c4c4;}
 }
 
 @media (max-width:320px){
-    
+    .movie_title ul{height:29px;white-space: nowrap; overflow-x: auto;}
+    .movie_title ul li a{font-size:13px; margin-right:  9px;}
+    .movie_title ul li.active a:before {bottom: -17px;}
+
 }
