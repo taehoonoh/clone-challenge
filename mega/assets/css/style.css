@@ -4,8 +4,14 @@
 
 #mNav{display:none ;position: absolute; top:8px; right: 14px;}
 #header {width: 100%;border-bottom: 1px solid #c6c6c6;
-background: #fff;}
-#banner{position: relative;}
+background: #fff;
+position: fixed; z-index: 100;}
+#banner{position: relative; }
+#movie{background-color: #f8f8f8;}
+#event{}
+#opening{margin:17px 0;
+    background:url(../img/bg01.jpg) no-repeat center center; background-size: cover;}
+#new{}
 
 /* 가운데 영역 */
 .container {position: relative; width: 1280px; margin: 0 auto;
@@ -158,12 +164,152 @@ vertical-align: -3px;}
 
 .movie_chart > div > div > div .infor .infor_btn a:last-child{margin-right: 0;}
 
+/* 이벤트 */
+.event{padding:100px 0;}
+.event img{display: block;}
+.event h2{font-size:30px; font-weight: 500; margin-bottom: 20px;}
+.event .event_left{width: 66%; margin-right: 2%;}
+.event .event_box1{width: 50%;}
+.event .event_box2{width: 50%;}
+.event .event_right{width: 32%;}
+
+.event_box{display: flex;}
+.event_all{display: flex;}
+
+/* 오프닝 */
+.opening{padding:100px 0; text-align: center; color: #bb9b51;}
+.opening h2{    margin-bottom: 15px;}
+.opening h2 .grand{background-position: 0 -175px;
+display: inline-block; width: 330px; height: 50px;}
+.opening .date{background-position: 0 -225px;
+    display: inline-block; width: 260px; height: 45px;}
+.opening .desc{font-size: 35px; font-weight: 300; padding-bottom: 20px;
+background: url(../img/bar.png) no-repeat bottom center;
+background-size: 100%;}
+
+.opening .open_box{display: flex;
+    padding: 20px 3% 0 3%;
+}
+
+.opening .open_box > div{
+    width: 27.333%;
+    margin: 4% 3% 0 3%;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #3e4b44;
+}
+.opening .open_box > div >h3{color: #fff;
+    font-weight: 300;
+    border: 1px solid #6e3abb;
+    margin-top: -24px;
+    font-size: 19px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #551e9b;
+}
+.opening .open_box p{    font-size: 23px;
+    color: #fff;
+    font-weight: 700;
+    padding: 6% 0 10% 0;}
+    .opening .open_box em{display: block;}
+    .opening .open_box strong{display: block;}
+
+/* 새로운영화 */
+.new{padding: 100px 0;position: relative;}
+.new h2{ font-size: 30px; font-weight: 500;margin-bottom: 20px;}
+.new .new_left{ height: 500px;margin-right: 423px;
+background: #ccc url(../img/new01.jpg) center center;
+background-size: cover;position: relative;}
+.new .new_left .play{position: absolute; left:50%; top:50%;
+transform: translate(-50%,-50%);
+width: 120px; height: 120px;}
+.new .new_left .play .st0{fill: #fff; opacity: .3;}
+.new .new_left .play .st1{fill: #fff;}
+.new .new_right{
+    position: absolute; top:165px; right: 0;
+    width:400px; height:500px; padding:34px;background: #f0f0f0;
+box-sizing: border-box;}
+.new .new_right .title{font-size: 28px; color: #000;}
+.new .new_right .release{font-size: 12px; color: #333;}
+.new .new_right .star{padding: 13px 0;}
+.new .new_right .star strong{font-size: 15px; padding-left: 5px;}
+.new .new_right .star span{display:inline-block;width: 20px; height: 20px;
+vertical-align: -5px;}
+.new .new_right .star .star1{background-position: -393px 0;}
+.new .new_right .star .star2{background-position: -412px 0;}
+.new .new_right .star .star0{background-position: -374px 0;}
+
+.new .new_right .summary{font-size: 14px;}
+.new .new_right .genre{padding-bottom: 3px;}
+.new .new_right .age{padding-bottom: 10px;}
+.new .new_right .desc{margin-bottom:20px;height: 107px;overflow: hidden;}
+
+.new .new_right .select{overflow: hidden;}
+.new .new_right .select .s0{display: flex;
+justify-content: space-around;}
+.new .new_right .select .s1{width: 49%; margin-right: 2%; background: #000;}
+.new .new_right .select .s2{width: 49%; background: #000;}
+.new .new_right .select .s3{ width: 100%; margin-top: 2%;}
+.new .new_right .btn{display: flex; margin-top: 2%; text-align: center;}
+.new .new_right .btn a{width: 49%; box-sizing:border-box; display: block; padding:10px 30px 12px 30px}
+.new .new_right .btn a.white{background-color: #fff; margin-right: 2%; color: #3a0e6a;
+border: 1px solid #3a0e6a;}
+.new .new_right .btn a.purple{background-color: #3a0e6a; color: #fff;
+border: 1px solid #6e40c4;}
+
+/* help */
+.help{display: flex; padding-bottom: 200px;}
+.help article{width: 32%; margin-right: 2%;  height: 350px;}
+.help article > div{border: 1px solid #dbdbdb;  height: 350px; margin-right: 24px;}
+.help article .help_box3{margin-right: 0;}
+.help article.help_box3 > div{border: 0;}
+.help article h3{font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+.help article > div:nth-of-type(3){margin-right: 0;}
+
+/* 공지사항 */
+.notice{padding:17px; position: relative;}
+.notice >ul{display: flex;}
+.notice ul li{text-align: center; margin-right: -1px;}
+.notice ul li a{border: 1px solid #dbdbdb; font-size: 15px; color: #666; display: block; width: 80px; padding:10px 20px; background-color:#f5f5f5 ;}
+.notice ul li.active a{background-color: #fff;}
+.notice ul li ul{position: absolute; left:17px; top:70px; width:90%}
+.notice ul li ul li{width:100%; box-sizing:border-box;text-align: left; padding:17px; border-bottom: 1px solid #dbdbdb;}
+.notice ul li ul li:last-child{border: 0;}
+.notice ul li ul li dt em{color: #999;}
+.notice ul li ul li dt .bar {position: relative; padding-right: 14px; }
+.notice ul li ul li dt .bar::after{ content:''; position: absolute; right:5px; top:5px;
+width: 1px; height: 10px ; background-color: #999;}
+
+.notice ul li ul li dd{color: #777; padding-top: 3px; overflow: hidden;
+text-overflow: ellipsis; white-space: nowrap;}
 
 
 
+/* 할인카드 */
+.card{padding:17px;}
+.card ul li{position: relative;border: 1px solid #d7d7d7; padding:15px; margin-bottom: 15px; min-height: 102px;
+box-sizing: border-box;}
+.card ul li span{position: absolute; left:17px;top:17px;}
+.card ul li span img{width: 105px;}
+.card ul li strong{display: block; font-size: 18px; padding-left: 120px;
+color:#777;}
+.card ul li em{display: block; font-size:14px; padding-left:120px;
+    color:#777; font-weight: 300;}
 
+/* 고객센터 */
 
-
+.service ul{display: flex;
+flex-wrap: wrap;}
+.service li{width: 50%; height: 193px; box-sizing: border-box;
+border: 1px solid #d7d7d7; text-align: center;}
+.service li a span{display: block; width:120px;
+height: 120px; margin:20px auto 0 auto;
+overflow: hidden;}
+.service li a strong{color:#666; font-size:18px;
+font-weight: 500;}
+.service li:nth-child(1){ border-right: 0; border-bottom: 0;}
+.service li:nth-child(2){ border-bottom: 0;}
+.service li:nth-child(3){ border-right: 0;}
 
 
 
@@ -186,6 +332,7 @@ vertical-align: -3px;}
     .row{padding: 0 24px;}
     .header {display: block; text-align: center;}
     .header h1 strong{left:24px}
+
     .banner_menu .bm_left ul {display: none;}
     .banner_menu .bm_right ul:first-child{display: none;}
     .banner_menu .bm_right ul {
@@ -194,7 +341,19 @@ vertical-align: -3px;}
         top: 444px;
         left: 41px;}
         
-        .slider .swiper-slide h2::after{ left:20px; bottom:-15px}
+    .slider .swiper-slide h2::after{ left:20px; bottom:-15px}
+    .help{flex-wrap: wrap;}
+    .help article.help_box1{width: 49%; margin-right: 2%;}
+    .help article.help_box2{width: 49%; margin-right: 0;}
+    .help article.help_box3{width: 100%; margin-top: 2%;}
+    .help article{height: auto; margin-right: 0; }
+    .service li {width:25%; height: auto;}
+    .service li:nth-child(1){border-bottom: 1px solid #d7d7d7;}
+    .service li:nth-child(2){border-bottom: 1px solid #d7d7d7;
+    border-right: 0;}
+    .service li a strong{display:block; padding-bottom: 10%;}
+    
+
 }
 
 @media (max-width:960px){
@@ -209,6 +368,11 @@ vertical-align: -3px;}
     .slider .swiper-slide h2::after{ left:20px; bottom:-15px}
     .movie_title ul{width: auto; margin: 0 auto;}
     .movie_title ul li{width: 25%; box-sizing: border-box;}
+    .opening {padding: 50px 0;}
+    .opening .open_box{display: none;}
+    .opening .desc {background:none;font-size: 25px;}
+    .new .new_left{margin-right: 0; height: 400px;}
+    .new .new_right{position: relative; top: 0; width: 100%; height: auto;}
 }
 
 
@@ -220,7 +384,10 @@ vertical-align: -3px;}
     .header h1 strong{display: none;}
     .header h1{text-align: left;}
     .banner_menu .bm_right ul {left: 33px;}
-    #movie .row {background: #fff; margin: 24px;padding: 24px;}
+
+    #movie{background: none;}
+
+    #movie .row {background: #fff; margin: 24px 24px 0 24px;padding: 24px;}
     #movie .ir_so{position: static; width: auto; height:  auto; line-height: normal;text-indent: 0; font-size: 24px; font-weight: bold; padding-bottom: 20px;}
     .movie {padding: 0}
     .movie_title{margin-bottom: 30px;}
@@ -234,7 +401,47 @@ vertical-align: -3px;}
         bottom: -10px; width: 100%; height: 2px; background: #666;}
     .movie_title ul li.active a { background:none; color: #666;}
     
+    #event .row{padding: 24px;}
+    .event {padding: 24px; background: #fff;}
+    .event h2{font-size: 24px; font-weight: 700;}
+    .event .event_left{width: 100%; margin-right: 0;}
+    .event .event_right{display: none;}
+
+     #opening{margin:0} 
+    
+    #new .row{padding: 0 24px;}
+     .new{padding:24px;background-color: #fff; margin-top: 24px;}
+     .new h2{font-size: 24px; font-weight: 700; height: 27px; margin-bottom: 20px;
+    padding-bottom: 10px;}
+    .new .new_right{padding: 24px;}
+
+    #help .row{padding:0 24px}
+    .help{padding-bottom: 24px;}
+    .help article > div {margin-right: 0;}
+    .help article.help_box1{ padding: 24px;width:100%; background: #fff; margin-right:0;
+    margin-top: 24px; box-sizing: border-box;}
+    .help article.help_box2{ padding: 24px;width:100%; background: #fff; margin-right:0;
+        margin-top: 24px; box-sizing: border-box;}
+    .help article.help_box3{ width:100%; background: #fff; margin-top:0;
+        margin-top: 24px;}
+    .help article.help_box1 h3{font-size: 24px; font-weight: 700; height: 27px; margin-bottom: 20px;
+        padding-bottom: 10px;}
+
+    .help article.help_box2 h3{font-size: 24px; font-weight: 700; height: 27px; margin-bottom: 20px;
+            padding-bottom: 10px;}
+
+    .help article.help_box3 h3{display: none;}
+    .help article.help_box3 > div{height: auto;}
+    .service li{border: 0;}
+    .service li:nth-child(1) {border-bottom: 0;}
+    .service li:nth-child(2) {border-bottom: 0;}
+    
+    
 }
+
+
+
+
 
 @media (max-width:600px){
     .slider{height: 400px;}
@@ -274,8 +481,45 @@ color: #777; margin-bottom: 5px; box-sizing: border-box;
 font-size: 14px; background: none; border: 1px solid #ddd;}
 
     .movie_chart > div > div >div .infor .infor_btn a:last-child{display: none;}
-}
 
+    #event .row{padding: 0 8px}
+    .event{padding:16px}
+    .event h2{font-size: 18px; margin-bottom: 8px;}
+    
+    #opening{margin:20px 0}
+    .opening{padding:20px 0}
+    .opening h2{margin-bottom: 10px;}
+    .opening h2 .grand{background-size: 300px;
+    background-position: 0 -105px; width: 197px; height: 24px;}
+    .opening .date {display: none;}
+    .opening .desc{font-size: 16px; font-weight: 400; padding-bottom: 0;}
+        
+    #new .row{padding: 0 8px;}
+    .new{padding: 16px; margin-top: 8px;}
+    .new h2{font-size: 18px; margin-bottom: 0;}
+    .new .new_left {height: 300px;}
+    .new .new_right {padding:17px;}
+    .new .new_right .title{font-size: 22px;}
+    .new .new_right .star{padding: 9px 0;}
+    .new .new_right .select .s0{display: block;}
+    .new .new_right .select .s1{
+       
+        width: 100%; margin-right: 0; margin-bottom: 2%; }
+    .new .new_right .select .s2{width: 100%;}
+
+    #help .row{padding:0 8px}
+    .help article.help_box1{margin-top: 8px; padding:16px}
+    .help article.help_box2{margin-top: 8px; padding:16px}
+    .help article.help_box3{margin-top: 8px; }
+    .help article.help_box1 h3{font-size:18px; margin-bottom: 0;}
+    .help article.help_box2 h3{font-size:18px; margin-bottom: 0;}
+    .card {padding: 8px;}
+    .service li{width: 50%;}
+    .service li:nth-child(1) {border-right: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7;}
+    .service li:nth-child(2) {border-bottom: 1px solid #d7d7d7;}
+    .service li:nth-child(3) {border-right: 1px solid #d7d7d7; }
+    
+}
 
 @media (max-width:480px){
     
@@ -285,5 +529,11 @@ font-size: 14px; background: none; border: 1px solid #ddd;}
     .movie_title ul{height:29px;white-space: nowrap; overflow-x: auto;}
     .movie_title ul li a{font-size:13px; margin-right:  9px;}
     .movie_title ul li.active a:before {bottom: -17px;}
+    .notice{padding:8px}
+    
+    .card{padding:8px 8px 0 8px}
+    .card ul li {padding:13px}
+    .service li a span{width: 70px; height: 70px;}
+    .service li a strong {font-size:14px}
 
 }
