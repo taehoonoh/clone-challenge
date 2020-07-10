@@ -48,3 +48,24 @@ var movCont = document.querySelectorAll('.movie_chart > div');
         });
 
 // 코드 다시 깔끔하게 정리하기
+
+var noticeBtn = document.querySelectorAll('.notice ul li ')
+var noticeCont = document.querySelectorAll('.notice ul ul');
+
+console.log(noticeBtn)
+console.log(noticeCont)
+
+noticeBtn[5].addEventListener('click',function(){
+    event.preventDefault();
+    this.classList.add('active')
+    noticeBtn[0].classList.remove('active')
+    noticeCont[0].style.display ="none"
+    noticeCont[1].style.display ="block"
+});
+noticeBtn[0].addEventListener('click',function(){
+    event.preventDefault();
+    this.classList.add('active')
+    noticeBtn[5].classList.remove('active')
+    noticeCont[1].style.display ="none"
+    noticeCont[0].style.display ="block"
+});
