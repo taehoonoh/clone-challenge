@@ -1,18 +1,24 @@
 *{margin: 0; padding: 0;}
+strong{font-weight: normal;}
+li{list-style: none;}
 
 /* 시간 */
-.bar{display: flex; justify-content: space-between;}
-.bar .time{margin-left: 21px;}
-.bar .time2{margin-right: 21px;}
+.bar{display: flex; justify-content: space-between;
+   }
+.bar .time{margin-left: 21px;color:#727272}
+.bar .time2{margin-right: 21px; color:#727272 }
 
 /* 프렌즈헤더 */
 header{display: flex;align-items: center;
 justify-content: space-between;
 margin-top: 20px;
 margin-left: 21px;
-margin-bottom: 33px;}
-.title_icon{margin-right: 21px;}
+margin-bottom: 60px;}
 
+header h1{font-size: 24px;}
+
+.title_icon{margin-right: 21px; font-size: 20px;}
+.title_icon span{margin-left: 20px;}
 
 #List{position: relative;}
 .container{margin-left: 21px;}
@@ -52,15 +58,16 @@ justify-content: space-between;
 border-radius: 10px 10px 10px 10px;
 margin-right: 21px;}
 
+/* 네비 */
 nav{
     width: 100%;
     position: fixed;
 left: 0; bottom: 0;
-
-}
-
-nav{background: #fcfcfc;
+background: #fcfcfc;
 border-top: #f7f7f7;}
+
+
+nav i{font-size: 20px;}
 
 nav ul {display: flex;
 justify-content: space-around;

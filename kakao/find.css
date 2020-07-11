@@ -1,66 +1,79 @@
 *{margin: 0; padding: 0;}
+strong{font-weight: normal;}
+li{list-style: none;}
 
 /* 시간 */
-.bar{display: flex; justify-content: space-between;}
-.bar .time{margin-left: 21px;}
-.bar .time2{margin-right: 21px;}
+.bar{display: flex; justify-content: space-between;
+   }
+.bar .time{margin-left: 21px;color:#727272}
+.bar .time2{margin-right: 21px; color:#727272 }
 
 /* 프렌즈헤더 */
 header{display: flex;align-items: center;
 justify-content: space-between;
 margin-top: 20px;
 margin-left: 21px;
-margin-bottom: 33px;}
-.title_icon{margin-right: 21px;}
+margin-bottom: 60px;}
 
+header h1{font-size: 24px;}
+
+.title_icon{margin-right: 21px; font-size: 20px;}
+.title_icon span{margin-left: 20px;}
 
 #List{position: relative;}
 .container{margin-left: 21px;}
 
-/* 프로필영역 */
-.user{display: flex; align-items: center;
- padding-bottom: 15px;
-border-bottom: 1px solid #ccc;}
-.user .user_info{margin-left: 17px;}
-.user figure img{width: 71px; height: 71px;
-border-radius: 50%;}
 
-/* 플러스친구 */
-.plus{margin-top: 23px; 
-padding-bottom: 20px;  border-bottom: 1px solid #ccc;}
-.plus figure {display: flex;
-align-items: center; margin-top: 12px;}
-.plus figure img{width: 50px; height: 50px; border-radius: 50%;}
-.plus figure span{margin-left: 17px;}
+
+/* 프로필영역 */
+.find_list{border-bottom: 1px solid #ccc;}
+.find_list ul{display: flex;
+justify-content: space-around;
+text-align: center;}
+
+.find_list ul i{font-size: 24px;
+    margin-bottom: 14px}
+
+.find_list ul li p{
+margin-bottom: 25px;
+font-size: 14px;
+color: #020202;}
 
 /* 친구14명 영역 */
-
+.friends_all{display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
 .friends14{padding-bottom: 20px;
     margin-top: 23px;}
+.friends14 >strong{    font-size: 12px;
+    opacity: 0.7;}
 .friends_info {display: flex; align-items: center; margin-top: 12px;}
 .friends_info div{margin-left: 17px;}
 
 
 .friends_info img{width: 50px; height: 50px;
-border-radius: 50%;}
-
-.friends_all{display: flex;
-align-items: center;
-justify-content: space-between;
+border-radius: 40%;}
+.user_name{font-size: 16px; color: #020202;}
+.music{margin-right: 21px;background: #f5f5f5;;
+    padding: 5px 12px; border-radius: 10%;
 }
-.music{
 
-margin-right: 21px;}
 
+
+
+
+
+/* 네비 */
 nav{
     width: 100%;
     position: fixed;
 left: 0; bottom: 0;
-
-}
-
-nav{background: #fcfcfc;
+background: #fcfcfc;
 border-top: #f7f7f7;}
+
+
+nav i{font-size: 20px;}
 
 nav ul {display: flex;
 justify-content: space-around;
