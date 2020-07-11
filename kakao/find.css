@@ -21,7 +21,7 @@ header h1{font-size: 24px;}
 .title_icon span{margin-left: 20px;}
 
 #List{position: relative;}
-.container{margin: 0 21px;}
+.container{margin: 0 21px; min-height: 105vh;}
 
 
 
