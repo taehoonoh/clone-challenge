@@ -37,8 +37,8 @@ nav{
     width: 100%;
     position: fixed;
 left: 0; bottom: 0;
-background: #fcfcfc;
-border-top: #f7f7f7;}
+background: #f9f9f9;
+border-top:1px solid #ebebeb}
 
 nav i{font-size: 20px;}
 
