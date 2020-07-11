@@ -4,7 +4,7 @@ a{color: black; text-decoration: none;}
 
 /* 시간 */
 .bar{display: flex; justify-content: space-between;
-   }
+padding-top: 10px;}
 .bar .time{margin-left: 21px;color:#727272}
 .bar .time2{margin-right: 21px; color:#727272 }
 
@@ -21,8 +21,7 @@ header h1{font-size: 24px;}
 .title_icon span{margin-left: 20px;}
 
 #List{position: relative;}
-.container{margin-left: 21px;
-margin-right: 21px;}
+.container{margin:0 21px}
 
 /* 프로필영역 */
 .user_more{display: flex;
@@ -48,10 +47,12 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background: #f5f5f5;}
+background: #f5f5f5;
+background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px 10px 10px 10px;}
 
-.pay_left {margin-left: 21px; 
-}
+.pay_left {margin-left: 21px; }
 .pay_left a{display: block;
     background: white ; padding:5px 10px;
     border-radius: 15px 15px 15px 15px;
@@ -59,14 +60,13 @@ background: #f5f5f5;}
     border-radius: 15px 15px 15px 15px;
 }
 .pay_right{margin-right: 21px;}
+
 /* 아이콘리스트 */
-.icon_list ul{display: flex; justify-content: space-around;
-text-align: center;}
-.icon_list ul li{list-style: none;
-margin-top: 30px;
-width: 100%;}
+.icon_list ul{display: flex; text-align: center;}
+.icon_list ul li{list-style: none;margin-top: 30px;width: 100%;}
 .icon_list ul li span{display: block;}
-.icon_list ul li span:nth-of-type(2){margin-top: 10px;}
+.icon_list ul li span:nth-of-type(2){margin-top: 10px;
+font-size: 11px;}
 .icon_list i{font-size: 27px;}
 
 
