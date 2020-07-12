@@ -21,10 +21,10 @@ header{display: flex;align-items: center;
     .title_icon{margin-right: 21px; }
     .title_icon span{margin-left: 20px;}
     .title_icon span i{font-size: 20px;}
-
+    .title_icon span:nth-of-type(2) i{width:  20px;}
 #List{position: relative;}
 .container{margin:0 21px;
-    min-height: 90vh;
+    min-height: 110vh;
 }
 
 /* 프로필영역 */
@@ -55,14 +55,21 @@ background: #f5f5f5;
     border: 1px solid #f5f5f5;
     border-radius: 10px 10px 10px 10px;}
 
-.pay_left {margin-left: 21px; }
+.pay_left {margin-left: 21px;}
 .pay_left a{display: block;
     background: white ; padding:5px 10px;
     border-radius: 15px 15px 15px 15px;
     border: 1px solid #ccc;
     border-radius: 15px 15px 15px 15px;
 }
-.pay_right{margin-right: 21px;}
+.pay_left a span{font-weight: 800;}
+.pay_right{margin-right: 13px;}
+.pay_right span{position: relative;}
+.pay_right span::after{content: '';
+position: absolute;width: 1px; height: 16px;
+top:3px; right:-3px; background: #ccc}
+.pay_right span:last-child::after{width: 0; height: 0;}
+
 
 /* 아이콘리스트 */
 .icon_list ul{display: flex; text-align: center;}
@@ -75,8 +82,39 @@ font-size: 11px;}
 
 .icon_list ul:nth-of-type(4){margin-bottom: 15px;}
 /* 배너 */
-.ad img{   width: 100%;
-    border-radius: 5px;}
+
+.ad{position: relative;
+    color: #fff;
+font-weight: bold;}
+.ad img{width: 100%; border-radius: 5px;position: relative;}
+
+
+.ad span:nth-of-type(1){
+    position: absolute;
+    top:10px;right: 10px;
+    font-size: 7px;
+    border-radius: 10px;
+    padding: 3px 5px;
+    background: rgba(215, 215, 215, 0.3)
+
+    
+}
+.ad span:nth-of-type(2){
+    position: absolute;
+    bottom: 10px; left: 10px;
+    font-size: 12px;
+    
+}
+.ad span:nth-of-type(3){
+    position: absolute;
+    bottom: 10px; right: 10px;
+    font-size: 10px;
+    border: 1px solid #fff;
+    border-radius: 3px 3px 3px 3px;
+    padding: 3px;
+}
+
+
 
 
 /* 네비 */
