@@ -38,10 +38,17 @@ border-radius: 40%;}
 /* 플러스친구 */
 .plus{margin-top: 23px; 
 padding-bottom: 20px;  border-bottom: 1px solid #f7f7f7;}
+
 .plus figure {display: flex;
 align-items: center; margin-top: 12px;}
 .plus figure img{width: 50px; height: 50px; border-radius: 40%;}
 .plus figure span{margin-left: 17px;}
+
+.ch_all{display: flex; justify-content: space-between;
+align-items: center;
+}
+.ch_all .one{color: #020202;opacity: 0.6;font-size: 12px;}
+
 
 /* 친구14명 영역 */
 
@@ -69,7 +76,7 @@ padding: 2px 7px;
 
 .music span i{font-size: 11px}
 
-.friends_title{font-size: 14px; color: #020202;
+.friends_title{font-size: 12px; color: #020202;
     opacity: 0.6;}
 
 
