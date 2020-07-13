@@ -32,6 +32,7 @@ ul{padding-bottom: 10px;font-size: 16px;border-bottom: 1px solid #ebebeb;
 margin-left: 10px; }
 ul li{padding:24px 10px;display: flex;}
 ul li span{margin-right: 10px;}
+ul li span i{font-size: 13px;}
 ul li small{display: block;color: #969696; font-size: 13px;
 padding-top: 12px;}
 ul:nth-of-type(1) li{border-bottom: 1px solid #f6f6f6;}
