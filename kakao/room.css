@@ -1,0 +1,77 @@
+*{margin: 0; padding: 0;}
+strong{font-weight: normal;}
+a{color: black;text-decoration: none;}
+body{background: #b2c7da;}
+li{list-style: none;}
+/* 시간 */
+.bar{display: flex; justify-content: space-between;
+    padding-top: 10px;
+font-size: 13px;
+background: #9aadbc;}
+.bar .time{margin-left: 21px;color:#727272}
+.bar .time2{margin-right: 21px; color:#727272 }
+
+/* 프렌즈헤더 */
+header{display: flex;align-items: center;
+justify-content: space-between;
+padding-top: 9px;
+padding-left: 21px;
+padding-bottom: 9px;
+background: #8ec3f1;}
+.title_left{display: flex;}
+
+header h1{font-size: 16px;}
+
+.title_icon{padding-right: 21px; }
+.title_icon span{margin-left: 20px;}
+.title_icon span i{font-size: 20px;}
+
+#List{position: relative; }
+.container{margin: 0 21px;}
+/* 메시지 */
+.date{text-align: center;
+margin-top: 10px;}
+.date span{
+    background-color: #9cafc0;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+    font-weight: 700;
+}
+
+.ms_all{margin-top: 10px;
+    font-size: 14px;}
+.ms_all small{font-size: 9px;}
+
+.ms_left{display: flex;
+width: 100%; }
+.ms_left em{background: white;
+border-radius: 10px;
+font-size: 14px;}
+.ms_left img{width: 30px;height: 30px;
+border-radius: 10px;}
+.ms_right{text-align: right;}
+.ms_right em{background: #ffeb2e;
+    border-radius: 10px;}
+
+
+
+/* 하단인풋 */
+.chat_box{width: 100%;
+position: fixed;
+text-align: center;
+left: 0; bottom: 0;
+background: #f9f9f9;
+border-top:1px solid #ebebeb;
+padding: 5px 0;
+display: flex;}
+
+.chat_left{width: 5%;}
+.chat_box input{
+    all: unset;
+    width: 85%;
+    text-align: left;}
+.chat_right{width:10%}

@@ -1,5 +1,7 @@
 *{margin: 0; padding: 0;}
 strong{font-weight: normal;}
+a{color: black;
+text-decoration: none;}
 
 /* 시간 */
 .bar{display: flex; justify-content: space-between;
