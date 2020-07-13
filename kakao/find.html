@@ -10,14 +10,14 @@
 <body>
     <div class="bar">
         <div class="time">
-            <time>14:00</time>
+            <time></time>
         </div>
         <div class="time2">
             <i class="fas fa-clock"></i>
             <i class="fas fa-volume-mute"></i>
             <i class="fas fa-wifi"></i>
-            <span>100%</span>
-            <i class="fas fa-battery-full"></i>
+            <span class="battery">100%</span>
+            <i class="fas fa-battery-full battery II"></i>
         </div>
     </div>
     <!-- //상단 bar -->
@@ -139,5 +139,41 @@
             <li><a href="more.html"> <i class="fas fa-ellipsis-h"></i></a></li>
         </ul>
     </nav>
+
+    <script>
+        var target = document.querySelector('time')
+        var targetB = document.querySelector('.battery')
+        var targetI = document.querySelector('.II')
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+
+        function clock() {
+        if(minutes<10){
+                minutes = "0" + minutes};
+        if(hours<10){
+                hours = "0" + hours};
+    
+        target.innerText = (hours)+":"+(minutes);
+       
+        }
+        // 12시 이전 배터리50% 이후 100%
+        if(hours<=12){
+            targetB.innerText = "50%"
+            targetI.classList.add('fa-battery-half')
+        }else{ targetI.classList.remove('fa-battery-half')}
+
+    
+    function init() {
+        
+    clock();
+    
+    setInterval(clock, 1000);
+    
+    }
+    
+    init();
+    
+        </script>
 </body>
 </html>
