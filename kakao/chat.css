@@ -27,7 +27,7 @@ header h1{font-size: 20px;}
 .container{margin: 0 21px; }
 
 /* 프로필영역 */
-.chat{display: flex; align-items: center; justify-content: space-between;}
+.chat_all{display: flex; align-items: center; justify-content: space-between;}
 .user{display: flex; align-items: center;padding-bottom: 15px;}
 .user .user_info{margin-left: 17px;}
 .user figure img{width: 50px; height: 50px; border-radius: 40%;}
