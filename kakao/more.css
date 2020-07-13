@@ -11,7 +11,7 @@ font-size: 13px;   padding: 0 21px; color:#727272}
 
 /* 프렌즈헤더 */
 header{display: flex;align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;height: 27px;
     margin-top: 20px;
     padding: 0 21px;
     margin-bottom: 33px;}
