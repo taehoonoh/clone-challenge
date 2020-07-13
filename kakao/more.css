@@ -114,7 +114,20 @@ font-weight: bold;}
     padding: 3px;
 }
 
+/* 카카오나우 */
 
+.slider{padding-bottom: 100px;
+margin-top: 19px;}
+.slider h2{font-size: 14px; margin-bottom: 9px;}
+.swiper-slide figure img{
+    width: 100%;
+    border-radius: 5px;
+}
+.swiper-slide{position: relative;}
+
+.swiper-slide .now_text{position: absolute;
+bottom: 10px; left: 10px;
+font-weight: bold;}
 
 
 /* 네비 */
@@ -123,7 +136,8 @@ nav{
     position: fixed;
 left: 0; bottom: 0;
 background: #f9f9f9;
-border-top:1px solid #ebebeb}
+border-top:1px solid #ebebeb;
+z-index: 100;}
 
 
 nav i{font-size: 20px;}
