@@ -24,8 +24,7 @@ header{display: flex;align-items: center;
     .title_icon span:nth-of-type(2) i{width:  20px;}
 #List{position: relative;}
 .container{margin:0 21px;
-    min-height: 110vh;
-}
+    min-height: 95vh;}
 
 /* 프로필영역 */
 .user_more{display: flex;

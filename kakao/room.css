@@ -6,7 +6,7 @@ li{list-style: none;}
 
 /* 시간 */
 .bar{display: flex; justify-content: space-between;
-    padding-top: 10px;font-size: 13px;
+    padding-top: 10px;font-size: 13px; height: 16px;
 background: #9aadbc;}
 
 
@@ -30,7 +30,8 @@ header h1{font-size: 16px;}
 .title_icon span i{font-size: 17px;}
 
 #List{position: relative; }
-.container{margin: 0 21px;}
+.container{margin: 0 21px;
+    min-height: 95vh;}
 /* 메시지 */
 .date{text-align: center;
 margin-top: 10px;}

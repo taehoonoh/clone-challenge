@@ -23,7 +23,7 @@ header{display: flex;align-items: center;
     .title_icon span i{font-size: 20px;}
 
 #List{position: relative;}
-.container{margin: 0 21px; }
+.container{margin: 0 21px; min-height: 95vh;}
 
 
 
