@@ -228,7 +228,18 @@
             <li><a href="more.html"> <i class="fas fa-ellipsis-h"></i></a></li>
         </ul>
     </nav>
+    <script src="swiper.min.js"></script>
+
     
+    <script>    
+    var mySwiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+    </script>
+   
     <script>
         var target = document.querySelector('time')
         var targetB = document.querySelector('.battery')
@@ -291,8 +302,8 @@
     
     init();
 
-    
 </script>
+
 </body>
 
 </html>
