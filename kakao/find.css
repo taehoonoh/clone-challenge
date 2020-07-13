@@ -4,7 +4,7 @@ li{list-style: none;}
 
 /* 시간 */
 .bar{display: flex; justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 10px; height: 16px;
 font-size: 13px;}
 .bar .time{margin-left: 21px;color:#727272}
 .bar .time2{margin-right: 21px; color:#727272 }
