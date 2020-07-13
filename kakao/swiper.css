@@ -12,6 +12,7 @@
     list-style: none;
     padding: 0;
     z-index: 1;
+    top: 10px;
 }
 .swiper-container-no-flexbox .swiper-slide {
     float: left;
@@ -135,6 +136,7 @@
     transition: 300ms opacity;
     transform: translate3d(0, 0, 0);
     z-index: 10;
+    margin-top: 10px;
 }
 .swiper-pagination.swiper-pagination-hidden {
     opacity: 0;
