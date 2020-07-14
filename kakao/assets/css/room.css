@@ -28,8 +28,7 @@ header h1{font-size: 16px;}
 .title_icon span i{font-size: 17px;}
 
 #List{position: relative; }
-.container{padding:0 21px;
-    min-height: 95vh;}
+.container{padding:0 21px;}
 /* 메시지 */
 .date{text-align: center;
 margin-top: 10px;}

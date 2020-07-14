@@ -25,7 +25,7 @@ header h1{font-size: 20px;}
 
 
 #List{position: relative;}
-.container{margin: 0 21px;  min-height: 95vh;}
+.container{margin: 0 21px;}
 
 /* 프로필영역 */
 .chat_all{display: flex; align-items: center; justify-content: space-between;}

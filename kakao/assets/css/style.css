@@ -29,7 +29,7 @@ header h1{font-size: 20px; width: 100%;}
 
 
 #List{position: relative;}
-.container{padding:0 21px; min-height: 95vh;}
+.container{padding:0 21px;}
 
 /* 프로필영역 */
 .user{display: flex; align-items: center;
@@ -83,7 +83,8 @@ padding: 2px 7px;
 .music span i{font-size: 11px}
 
 .friends_title{font-size: 12px; color: #020202;
-    opacity: 0.6;}
+    opacity: 0.6; display: flex;
+justify-content: space-between;}
 
 /* 네비 */
 nav{
