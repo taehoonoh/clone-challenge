@@ -108,5 +108,36 @@
             </li>
         </ul>
     </main>
+    <script>
+        var target = document.querySelector('time')
+        var targetB = document.querySelector('.battery')
+        var targetI = document.querySelector('.batteryI')
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+
+        console.log(targetB);
+
+        function clock() {
+     
+        target.innerText = (hours)+":"+(minutes);
+
+        }
+        if(minutes<10){
+                minutes = "0" + minutes};
+        if(hours<10){
+                hours = "0" + hours};
+    
+    function init() {
+        
+    clock();
+    
+    setInterval(clock, 1000);
+    
+    }
+    
+    init();
+
+</script>
 </body>
 </html>

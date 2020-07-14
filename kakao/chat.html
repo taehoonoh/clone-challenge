@@ -134,38 +134,6 @@
      
         target.innerText = (hours)+":"+(minutes);
 
-
-
-        // (00~06)
-        // <i class="fas fa-battery-empty"></i> 0 
-        // (06~9)
-        // <i class="fas fa-battery-quarter"></i> 25
-        // (9~13)
-        // fa-battery-half 50
-        // (13~24)배터리 100%
-         // fa-battery-full 100
-      
-        
-        if(hours>=13){
-            targetB.innerText = "100%";
-            targetI.classList.remove('fa-battery-half');
-            targetI.classList.add('fa-battery-full');
-        }
-        else if(hours<=6){
-            targetB.innerText = "0%";
-            targetI.classList.remove('fa-battery-full');
-            targetI.classList.add('fa-battery-empty');
-
-        }else if(hours<=9){
-            targetB.innerText = "25%";
-            targetI.classList.remove('fa-battery-empty');
-            targetI.classList.add('fa-battery-quarter');
-        } else if(hours<=13){
-            targetB.innerText = "50%";
-            targetI.classList.remove('fa-battery-quarter');
-            targetI.classList.add(' fa-battery-half');
-        } 
-
         }
         if(minutes<10){
                 minutes = "0" + minutes};
@@ -182,7 +150,6 @@
     
     init();
 
-    
 </script>
 </body>
 </html>
