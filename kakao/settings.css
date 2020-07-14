@@ -12,7 +12,8 @@ header{display: flex;align-items: center;
     justify-content: space-between;
     padding-top: 9px;
     padding: 0 21px;
-    padding-bottom: 9px;}
+    padding-bottom: 9px;
+    margin-top: 20px;}
     .title_left{display: flex;}
     .title_left i{margin-right:12px;}
     
