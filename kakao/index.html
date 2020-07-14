@@ -140,7 +140,9 @@
     <nav>
         <ul>
          <li><a href="index.html"> <i class="fas fa-user"></i></a></li>
-            <li><a href="chat.html"> <i class="far fa-comment"></i></a></li>
+            <li><a href="chat.html">
+                <div class="red">4</div>
+                <i class="far fa-comment"></i></a></li>
             <li><a href="find.html"> <i class="fas fa-search"></i></a></li>
             <li><a href="more.html"> <i class="fas fa-ellipsis-h"></i></a></li>
         </ul>
@@ -172,25 +174,25 @@
          // fa-battery-full 100
       
         
-        if(hours>=13){
-            targetB.innerText = "100%";
-            targetI.classList.remove('fa-battery-half');
-            targetI.classList.add('fa-battery-full');
-        }
-        else if(hours<=6){
-            targetB.innerText = "0%";
-            targetI.classList.remove('fa-battery-full');
-            targetI.classList.add('fa-battery-empty');
+        // if(hours>=13){
+        //     targetB.innerText = "100%";
+        //     targetI.classList.remove('fa-battery-half');
+        //     targetI.classList.add('fa-battery-full');
+        // }
+        // else if(hours<=6){
+        //     targetB.innerText = "0%";
+        //     targetI.classList.remove('fa-battery-full');
+        //     targetI.classList.add('fa-battery-empty');
 
-        }else if(hours<=9){
-            targetB.innerText = "25%";
-            targetI.classList.remove('fa-battery-empty');
-            targetI.classList.add('fa-battery-quarter');
-        } else if(hours<=13){
-            targetB.innerText = "50%";
-            targetI.classList.remove('fa-battery-quarter');
-            targetI.classList.add(' fa-battery-half');
-        } 
+        // }else if(hours<=9){
+        //     targetB.innerText = "25%";
+        //     targetI.classList.remove('fa-battery-empty');
+        //     targetI.classList.add('fa-battery-quarter');
+        // } else if(hours<=13){
+        //     targetB.innerText = "50%";
+        //     targetI.classList.remove('fa-battery-quarter');
+        //     targetI.classList.add(' fa-battery-half');
+        // } 
 
         }
         if(minutes<10){
