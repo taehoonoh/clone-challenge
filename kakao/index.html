@@ -153,6 +153,11 @@
             <li><a href="more.html"> <i class="fas fa-ellipsis-h"></i></a></li>
         </ul>
     </nav>
+    <div class="Screen">
+        <h1 class="Screen_text">
+            모바일에 최적화 되어있습니다
+        </h1>
+    </div>
 
     <script>
         var target = document.querySelector('time')
@@ -163,7 +168,7 @@
         var minutes = date.getMinutes();
 
         console.log(targetB);
-
+        // 현재시간
         function clock() {
      
         target.innerText = (hours)+":"+(minutes);
