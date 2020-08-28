@@ -223,13 +223,13 @@ background-size: 100%;}
 .new{padding: 100px 0;position: relative;}
 .new h2{ font-size: 30px; font-weight: 500;margin-bottom: 20px;}
 .new .new_left{ height: 500px;margin-right: 423px;
-background: #ccc url(../img/new01.jpg) center center;
+background: #ccc url(../img/new02.jpg) center center;
 background-size: cover;position: relative;}
 .new .new_left .play{position: absolute; left:50%; top:50%;
 transform: translate(-50%,-50%);
 width: 120px; height: 120px;}
-.new .new_left .play .st0{fill: #fff; opacity: .3;}
-.new .new_left .play .st1{fill: #fff;}
+.new .new_left .play .st0{fill: #fff; opacity: .3; transition: all .8s;}
+.new .new_left .play .st1{fill: #fff; transition: all .8s;}
 .new .new_right{
     position: absolute; top:165px; right: 0;
     width:400px; height:500px; padding:34px;background: #f0f0f0;
@@ -361,7 +361,11 @@ display: block; width: 32px; height: 32px; overflow: hidden;
 position: absolute; top:80px; right: 24px; text-indent: 100%;}
 body.modal_on {overflow: hidden;}
 #blackout{display: none;}
+
 .play{cursor: pointer;}
+.new .new_left .play:hover .st0{opacity: .8;}
+.new .new_left .play:hover .st1{fill: #000;}
+
 .modal_close{cursor: pointer;}
 
 
