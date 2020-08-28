@@ -7,7 +7,7 @@ var iframe = document.querySelector('iframe')
 play.addEventListener('click',function(){
     blockout.style.display = "block"
     body.classList.add('modal_on')
-    iframe.src="https://www.youtube.com/embed/Fs3as4T6Rlo"
+    iframe.src="https://s3550.smartucc.kr/encodeFile/3550/2020/07/29/d1f40cdcd40da5bab8e6d5471b70299a_W.mp4"
 })
 
 
