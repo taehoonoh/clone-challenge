@@ -88,7 +88,7 @@
                   <div>
                       <p>태훈</p>
                       <em>안녕?</em>
-                      <small>오후 4:11</small>
+                      <small>오후 <time class="time">4:11</time></small>
                   </div>
               </li>
           </ul>
@@ -101,28 +101,38 @@
                 <i class="far fa-plus-square"></i>
             </span>
         </div>
-        <input type="text">
+        <input type="text" class="send"
+        placeholder="텍스트를 입력하세요">
         <div class="chat_right">
             <span>
                 <i class="far fa-smile-wink"></i>
                 <i class="fas fa-microphone"></i>
+                <button>전송</button>
             </span>
         </div>
     </div>
 
     <script>
-        var target = document.querySelector('time')
+        var target = document.querySelectorAll('.time')
         var targetB = document.querySelector('.battery')
         var targetI = document.querySelector('.batteryI')
         var date = new Date();
         var hours = date.getHours();
         var minutes = date.getMinutes();
+        var bt = document.querySelector('button')
+        var inText = document.querySelector('.send');
+        var mytalk =document.querySelector('.ms_all');
 
-        console.log(targetB);
+    
+   
+        
+console.log(target);
 
         function clock() {
      
-        target.innerText = (hours)+":"+(minutes);
+            for(var i =0; i<target.length;i++){
+                target[i].innerText = (hours)+":"+(minutes);
+            }
 
         }
         if(minutes<10){
@@ -139,6 +149,16 @@
     }
     
     init();
+       
+
+    bt.onclick = function(){
+       
+       mytalk.innerHTML += 
+       "<li class='ms_right'>"+"<div>"+"<em>"+inText.value+"</em>"+"</div>"+"<li>";
+        inText.value=null;
+        }
+        // 현재시간 로드X
+
 
 </script>
 
